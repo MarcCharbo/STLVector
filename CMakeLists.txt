@@ -1,20 +1,18 @@
 cmake_minimum_required(VERSION 3.7)
-project(HW1)
+project(HW2)
 
 set(CMAKE_CXX_STANDARD 11)
 
 set(SOURCE_FILES
+        Main.cpp
         Failure.cpp
         Failure.h
-        Main.cpp
         Test.cpp
         Test.h
         TestHarness.h
         TestRegistry.cpp
         TestRegistry.h
         TestResult.cpp
-        TestResult.h
-        CircleTest.cpp
-        Circle.cpp Circle.h)
+        TestResult.h)
 
-add_executable(HW1 ${SOURCE_FILES})
+add_executable(HW2 ${SOURCE_FILES})

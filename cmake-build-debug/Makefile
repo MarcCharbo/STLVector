@@ -123,33 +123,6 @@ StlVect/fast:
 	$(MAKE) -f CMakeFiles/StlVect.dir/build.make CMakeFiles/StlVect.dir/build
 .PHONY : StlVect/fast
 
-Failure.o: Failure.cpp.o
-
-.PHONY : Failure.o
-
-# target to build an object file
-Failure.cpp.o:
-	$(MAKE) -f CMakeFiles/StlVect.dir/build.make CMakeFiles/StlVect.dir/Failure.cpp.o
-.PHONY : Failure.cpp.o
-
-Failure.i: Failure.cpp.i
-
-.PHONY : Failure.i
-
-# target to preprocess a source file
-Failure.cpp.i:
-	$(MAKE) -f CMakeFiles/StlVect.dir/build.make CMakeFiles/StlVect.dir/Failure.cpp.i
-.PHONY : Failure.cpp.i
-
-Failure.s: Failure.cpp.s
-
-.PHONY : Failure.s
-
-# target to generate assembly for a file
-Failure.cpp.s:
-	$(MAKE) -f CMakeFiles/StlVect.dir/build.make CMakeFiles/StlVect.dir/Failure.cpp.s
-.PHONY : Failure.cpp.s
-
 Main.o: Main.cpp.o
 
 .PHONY : Main.o
@@ -204,87 +177,6 @@ Student.cpp.s:
 	$(MAKE) -f CMakeFiles/StlVect.dir/build.make CMakeFiles/StlVect.dir/Student.cpp.s
 .PHONY : Student.cpp.s
 
-Test.o: Test.cpp.o
-
-.PHONY : Test.o
-
-# target to build an object file
-Test.cpp.o:
-	$(MAKE) -f CMakeFiles/StlVect.dir/build.make CMakeFiles/StlVect.dir/Test.cpp.o
-.PHONY : Test.cpp.o
-
-Test.i: Test.cpp.i
-
-.PHONY : Test.i
-
-# target to preprocess a source file
-Test.cpp.i:
-	$(MAKE) -f CMakeFiles/StlVect.dir/build.make CMakeFiles/StlVect.dir/Test.cpp.i
-.PHONY : Test.cpp.i
-
-Test.s: Test.cpp.s
-
-.PHONY : Test.s
-
-# target to generate assembly for a file
-Test.cpp.s:
-	$(MAKE) -f CMakeFiles/StlVect.dir/build.make CMakeFiles/StlVect.dir/Test.cpp.s
-.PHONY : Test.cpp.s
-
-TestRegistry.o: TestRegistry.cpp.o
-
-.PHONY : TestRegistry.o
-
-# target to build an object file
-TestRegistry.cpp.o:
-	$(MAKE) -f CMakeFiles/StlVect.dir/build.make CMakeFiles/StlVect.dir/TestRegistry.cpp.o
-.PHONY : TestRegistry.cpp.o
-
-TestRegistry.i: TestRegistry.cpp.i
-
-.PHONY : TestRegistry.i
-
-# target to preprocess a source file
-TestRegistry.cpp.i:
-	$(MAKE) -f CMakeFiles/StlVect.dir/build.make CMakeFiles/StlVect.dir/TestRegistry.cpp.i
-.PHONY : TestRegistry.cpp.i
-
-TestRegistry.s: TestRegistry.cpp.s
-
-.PHONY : TestRegistry.s
-
-# target to generate assembly for a file
-TestRegistry.cpp.s:
-	$(MAKE) -f CMakeFiles/StlVect.dir/build.make CMakeFiles/StlVect.dir/TestRegistry.cpp.s
-.PHONY : TestRegistry.cpp.s
-
-TestResult.o: TestResult.cpp.o
-
-.PHONY : TestResult.o
-
-# target to build an object file
-TestResult.cpp.o:
-	$(MAKE) -f CMakeFiles/StlVect.dir/build.make CMakeFiles/StlVect.dir/TestResult.cpp.o
-.PHONY : TestResult.cpp.o
-
-TestResult.i: TestResult.cpp.i
-
-.PHONY : TestResult.i
-
-# target to preprocess a source file
-TestResult.cpp.i:
-	$(MAKE) -f CMakeFiles/StlVect.dir/build.make CMakeFiles/StlVect.dir/TestResult.cpp.i
-.PHONY : TestResult.cpp.i
-
-TestResult.s: TestResult.cpp.s
-
-.PHONY : TestResult.s
-
-# target to generate assembly for a file
-TestResult.cpp.s:
-	$(MAKE) -f CMakeFiles/StlVect.dir/build.make CMakeFiles/StlVect.dir/TestResult.cpp.s
-.PHONY : TestResult.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -294,24 +186,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... StlVect"
-	@echo "... Failure.o"
-	@echo "... Failure.i"
-	@echo "... Failure.s"
 	@echo "... Main.o"
 	@echo "... Main.i"
 	@echo "... Main.s"
 	@echo "... Student.o"
 	@echo "... Student.i"
 	@echo "... Student.s"
-	@echo "... Test.o"
-	@echo "... Test.i"
-	@echo "... Test.s"
-	@echo "... TestRegistry.o"
-	@echo "... TestRegistry.i"
-	@echo "... TestRegistry.s"
-	@echo "... TestResult.o"
-	@echo "... TestResult.i"
-	@echo "... TestResult.s"
 .PHONY : help
 
 

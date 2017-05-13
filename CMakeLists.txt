@@ -9,15 +9,7 @@ include_directories(${Boost_INCLUDE_DIRS})
 
 set(SOURCE_FILES
         Main.cpp
-        Failure.cpp
-        Failure.h
-        Test.cpp
-        Test.h
-        TestHarness.h
-        TestRegistry.cpp
-        TestRegistry.h
-        TestResult.cpp
-        TestResult.h Student.cpp Student.h)
+        Student.cpp Student.h)
 
 add_executable(StlVect ${SOURCE_FILES})
 

@@ -2,9 +2,20 @@
 #include <fstream>
 #include <boost/algorithm/string.hpp>
 #include <vector>
-#include "TestHarness.h"
+#include <sstream>
 #include "Student.h"
 
+void printStudentList(std::vector <std::vector <Student> *> group_student) {
+
+  std::cout<<"======== Student List ========"<<std::endl;
+  for (int i = 0; i < group_student.size();++i){
+    for (int j = 0; j<group_student[i]->size();++j){
+      auto temp = group_student[i]->at(j);
+      std::cout<<"Name: "<< temp.get_name()<< "   " <<"Id: "<<temp.get_id()
+               <<std::endl;
+    }
+  }
+}
 void sortVector(std::vector<Student> *student){
   sort( (*student).begin( ), (*student).end( ), [ ]( const Student& lhs, const
   Student& rhs )
@@ -13,7 +24,7 @@ void sortVector(std::vector<Student> *student){
   });
 }
 
-void groupStudent(std::vector<Student> *student){
+std::vector <std::vector <Student> *> groupStudent(std::vector<Student> *student){
 
   std::vector <std::vector <Student> *> student_group;
   int outer_vector_cout = 0;
@@ -32,6 +43,7 @@ void groupStudent(std::vector<Student> *student){
         student_group.at(outer_vector_cout)->push_back((*student)[i]);
       }
     }
+  return student_group;
 }
 
 // ASSUMPTION: Student ID is a positive integer.
@@ -81,7 +93,13 @@ int main() {
 
   std::vector<Student>* student = new std::vector<Student>(loadFile());
   sortVector(student);
-  groupStudent(student);
+  auto group_student = groupStudent(student);
+  printStudentList(group_student);
+
+  delete student;
+  for (auto ptr: group_student){
+    delete ptr;
+  }
 
 
   return 0;

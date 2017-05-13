@@ -34,3 +34,6 @@
 # Other
 *.idea
 worspace.xml
+cmake-build-debug/CMakeFiles/StlVect.dir/
+cmake-build-debug/StlVect
+cmake-build-debug/StlVect.cbp

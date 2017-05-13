@@ -153,7 +153,7 @@ CMAKE_OSX_DEPLOYMENT_TARGET:STRING=
 CMAKE_OSX_SYSROOT:STRING=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=HW2
+CMAKE_PROJECT_NAME:STATIC=StlVect
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib
@@ -218,6 +218,12 @@ HW2_SOURCE_DIR:STATIC=/Users/charbo/Documents/WU/CPP/Class2/STLVector
 
 //Path to a program.
 ProcessorCount_cmd_sysctl:FILEPATH=/usr/sbin/sysctl
+
+//Value Computed by CMake
+StlVect_BINARY_DIR:STATIC=/Users/charbo/Documents/WU/CPP/Class2/STLVector/cmake-build-debug
+
+//Value Computed by CMake
+StlVect_SOURCE_DIR:STATIC=/Users/charbo/Documents/WU/CPP/Class2/STLVector
 
 
 ########################

@@ -60,39 +60,39 @@ CMAKE_SOURCE_DIR = /Users/charbo/Documents/WU/CPP/Class2/STLVector
 CMAKE_BINARY_DIR = /Users/charbo/Documents/WU/CPP/Class2/STLVector/cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/HW2.dir
+# Target rules for target CMakeFiles/StlVect.dir
 
 # All Build rule for target.
-CMakeFiles/HW2.dir/all:
-	$(MAKE) -f CMakeFiles/HW2.dir/build.make CMakeFiles/HW2.dir/depend
-	$(MAKE) -f CMakeFiles/HW2.dir/build.make CMakeFiles/HW2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/charbo/Documents/WU/CPP/Class2/STLVector/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target HW2"
-.PHONY : CMakeFiles/HW2.dir/all
+CMakeFiles/StlVect.dir/all:
+	$(MAKE) -f CMakeFiles/StlVect.dir/build.make CMakeFiles/StlVect.dir/depend
+	$(MAKE) -f CMakeFiles/StlVect.dir/build.make CMakeFiles/StlVect.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/charbo/Documents/WU/CPP/Class2/STLVector/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target StlVect"
+.PHONY : CMakeFiles/StlVect.dir/all
 
 # Include target in all.
-all: CMakeFiles/HW2.dir/all
+all: CMakeFiles/StlVect.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/HW2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/charbo/Documents/WU/CPP/Class2/STLVector/cmake-build-debug/CMakeFiles 6
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/HW2.dir/all
+CMakeFiles/StlVect.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/charbo/Documents/WU/CPP/Class2/STLVector/cmake-build-debug/CMakeFiles 7
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/StlVect.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/charbo/Documents/WU/CPP/Class2/STLVector/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/HW2.dir/rule
+.PHONY : CMakeFiles/StlVect.dir/rule
 
 # Convenience name for target.
-HW2: CMakeFiles/HW2.dir/rule
+StlVect: CMakeFiles/StlVect.dir/rule
 
-.PHONY : HW2
-
-# clean rule for target.
-CMakeFiles/HW2.dir/clean:
-	$(MAKE) -f CMakeFiles/HW2.dir/build.make CMakeFiles/HW2.dir/clean
-.PHONY : CMakeFiles/HW2.dir/clean
+.PHONY : StlVect
 
 # clean rule for target.
-clean: CMakeFiles/HW2.dir/clean
+CMakeFiles/StlVect.dir/clean:
+	$(MAKE) -f CMakeFiles/StlVect.dir/build.make CMakeFiles/StlVect.dir/clean
+.PHONY : CMakeFiles/StlVect.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/StlVect.dir/clean
 
 .PHONY : clean
 

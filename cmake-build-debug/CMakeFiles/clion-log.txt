@@ -1,16 +1,5 @@
 /Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/charbo/Documents/WU/CPP/Class2/STLVector
 -- Boost version: 1.64.0
-CMake Warning at /Applications/CLion.app/Contents/bin/cmake/share/cmake-3.7/Modules/FindBoost.cmake:744 (message):
-  Imported targets not available for Boost version 106400
-Call Stack (most recent call first):
-  /Applications/CLion.app/Contents/bin/cmake/share/cmake-3.7/Modules/FindBoost.cmake:848 (_Boost_COMPONENT_DEPENDENCIES)
-  /Applications/CLion.app/Contents/bin/cmake/share/cmake-3.7/Modules/FindBoost.cmake:1435 (_Boost_MISSING_DEPENDENCIES)
-  CMakeLists.txt:7 (find_package)
-
-
--- Boost version: 1.64.0
--- Found the following Boost libraries:
---   filesystem
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /Users/charbo/Documents/WU/CPP/Class2/STLVector/cmake-build-debug

@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/charbo/Documents/WU/CPP/Class2/STLVector/Failure.cpp" "/Users/charbo/Documents/WU/CPP/Class2/STLVector/cmake-build-debug/CMakeFiles/HW2.dir/Failure.cpp.o"
   "/Users/charbo/Documents/WU/CPP/Class2/STLVector/Main.cpp" "/Users/charbo/Documents/WU/CPP/Class2/STLVector/cmake-build-debug/CMakeFiles/HW2.dir/Main.cpp.o"
+  "/Users/charbo/Documents/WU/CPP/Class2/STLVector/Student.cpp" "/Users/charbo/Documents/WU/CPP/Class2/STLVector/cmake-build-debug/CMakeFiles/HW2.dir/Student.cpp.o"
   "/Users/charbo/Documents/WU/CPP/Class2/STLVector/Test.cpp" "/Users/charbo/Documents/WU/CPP/Class2/STLVector/cmake-build-debug/CMakeFiles/HW2.dir/Test.cpp.o"
   "/Users/charbo/Documents/WU/CPP/Class2/STLVector/TestRegistry.cpp" "/Users/charbo/Documents/WU/CPP/Class2/STLVector/cmake-build-debug/CMakeFiles/HW2.dir/TestRegistry.cpp.o"
   "/Users/charbo/Documents/WU/CPP/Class2/STLVector/TestResult.cpp" "/Users/charbo/Documents/WU/CPP/Class2/STLVector/cmake-build-debug/CMakeFiles/HW2.dir/TestResult.cpp.o"

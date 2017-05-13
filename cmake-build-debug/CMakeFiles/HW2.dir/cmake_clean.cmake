@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/HW2.dir/Test.cpp.o"
   "CMakeFiles/HW2.dir/TestRegistry.cpp.o"
   "CMakeFiles/HW2.dir/TestResult.cpp.o"
+  "CMakeFiles/HW2.dir/Student.cpp.o"
   "HW2.pdb"
   "HW2"
 )

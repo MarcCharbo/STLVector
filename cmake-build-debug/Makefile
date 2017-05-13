@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named HW2
+# Target rules for targets named StlVect
 
 # Build rule for target.
-HW2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 HW2
-.PHONY : HW2
+StlVect: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 StlVect
+.PHONY : StlVect
 
 # fast build rule for target.
-HW2/fast:
-	$(MAKE) -f CMakeFiles/HW2.dir/build.make CMakeFiles/HW2.dir/build
-.PHONY : HW2/fast
+StlVect/fast:
+	$(MAKE) -f CMakeFiles/StlVect.dir/build.make CMakeFiles/StlVect.dir/build
+.PHONY : StlVect/fast
 
 Failure.o: Failure.cpp.o
 
@@ -129,7 +129,7 @@ Failure.o: Failure.cpp.o
 
 # target to build an object file
 Failure.cpp.o:
-	$(MAKE) -f CMakeFiles/HW2.dir/build.make CMakeFiles/HW2.dir/Failure.cpp.o
+	$(MAKE) -f CMakeFiles/StlVect.dir/build.make CMakeFiles/StlVect.dir/Failure.cpp.o
 .PHONY : Failure.cpp.o
 
 Failure.i: Failure.cpp.i
@@ -138,7 +138,7 @@ Failure.i: Failure.cpp.i
 
 # target to preprocess a source file
 Failure.cpp.i:
-	$(MAKE) -f CMakeFiles/HW2.dir/build.make CMakeFiles/HW2.dir/Failure.cpp.i
+	$(MAKE) -f CMakeFiles/StlVect.dir/build.make CMakeFiles/StlVect.dir/Failure.cpp.i
 .PHONY : Failure.cpp.i
 
 Failure.s: Failure.cpp.s
@@ -147,7 +147,7 @@ Failure.s: Failure.cpp.s
 
 # target to generate assembly for a file
 Failure.cpp.s:
-	$(MAKE) -f CMakeFiles/HW2.dir/build.make CMakeFiles/HW2.dir/Failure.cpp.s
+	$(MAKE) -f CMakeFiles/StlVect.dir/build.make CMakeFiles/StlVect.dir/Failure.cpp.s
 .PHONY : Failure.cpp.s
 
 Main.o: Main.cpp.o
@@ -156,7 +156,7 @@ Main.o: Main.cpp.o
 
 # target to build an object file
 Main.cpp.o:
-	$(MAKE) -f CMakeFiles/HW2.dir/build.make CMakeFiles/HW2.dir/Main.cpp.o
+	$(MAKE) -f CMakeFiles/StlVect.dir/build.make CMakeFiles/StlVect.dir/Main.cpp.o
 .PHONY : Main.cpp.o
 
 Main.i: Main.cpp.i
@@ -165,7 +165,7 @@ Main.i: Main.cpp.i
 
 # target to preprocess a source file
 Main.cpp.i:
-	$(MAKE) -f CMakeFiles/HW2.dir/build.make CMakeFiles/HW2.dir/Main.cpp.i
+	$(MAKE) -f CMakeFiles/StlVect.dir/build.make CMakeFiles/StlVect.dir/Main.cpp.i
 .PHONY : Main.cpp.i
 
 Main.s: Main.cpp.s
@@ -174,8 +174,35 @@ Main.s: Main.cpp.s
 
 # target to generate assembly for a file
 Main.cpp.s:
-	$(MAKE) -f CMakeFiles/HW2.dir/build.make CMakeFiles/HW2.dir/Main.cpp.s
+	$(MAKE) -f CMakeFiles/StlVect.dir/build.make CMakeFiles/StlVect.dir/Main.cpp.s
 .PHONY : Main.cpp.s
+
+Student.o: Student.cpp.o
+
+.PHONY : Student.o
+
+# target to build an object file
+Student.cpp.o:
+	$(MAKE) -f CMakeFiles/StlVect.dir/build.make CMakeFiles/StlVect.dir/Student.cpp.o
+.PHONY : Student.cpp.o
+
+Student.i: Student.cpp.i
+
+.PHONY : Student.i
+
+# target to preprocess a source file
+Student.cpp.i:
+	$(MAKE) -f CMakeFiles/StlVect.dir/build.make CMakeFiles/StlVect.dir/Student.cpp.i
+.PHONY : Student.cpp.i
+
+Student.s: Student.cpp.s
+
+.PHONY : Student.s
+
+# target to generate assembly for a file
+Student.cpp.s:
+	$(MAKE) -f CMakeFiles/StlVect.dir/build.make CMakeFiles/StlVect.dir/Student.cpp.s
+.PHONY : Student.cpp.s
 
 Test.o: Test.cpp.o
 
@@ -183,7 +210,7 @@ Test.o: Test.cpp.o
 
 # target to build an object file
 Test.cpp.o:
-	$(MAKE) -f CMakeFiles/HW2.dir/build.make CMakeFiles/HW2.dir/Test.cpp.o
+	$(MAKE) -f CMakeFiles/StlVect.dir/build.make CMakeFiles/StlVect.dir/Test.cpp.o
 .PHONY : Test.cpp.o
 
 Test.i: Test.cpp.i
@@ -192,7 +219,7 @@ Test.i: Test.cpp.i
 
 # target to preprocess a source file
 Test.cpp.i:
-	$(MAKE) -f CMakeFiles/HW2.dir/build.make CMakeFiles/HW2.dir/Test.cpp.i
+	$(MAKE) -f CMakeFiles/StlVect.dir/build.make CMakeFiles/StlVect.dir/Test.cpp.i
 .PHONY : Test.cpp.i
 
 Test.s: Test.cpp.s
@@ -201,7 +228,7 @@ Test.s: Test.cpp.s
 
 # target to generate assembly for a file
 Test.cpp.s:
-	$(MAKE) -f CMakeFiles/HW2.dir/build.make CMakeFiles/HW2.dir/Test.cpp.s
+	$(MAKE) -f CMakeFiles/StlVect.dir/build.make CMakeFiles/StlVect.dir/Test.cpp.s
 .PHONY : Test.cpp.s
 
 TestRegistry.o: TestRegistry.cpp.o
@@ -210,7 +237,7 @@ TestRegistry.o: TestRegistry.cpp.o
 
 # target to build an object file
 TestRegistry.cpp.o:
-	$(MAKE) -f CMakeFiles/HW2.dir/build.make CMakeFiles/HW2.dir/TestRegistry.cpp.o
+	$(MAKE) -f CMakeFiles/StlVect.dir/build.make CMakeFiles/StlVect.dir/TestRegistry.cpp.o
 .PHONY : TestRegistry.cpp.o
 
 TestRegistry.i: TestRegistry.cpp.i
@@ -219,7 +246,7 @@ TestRegistry.i: TestRegistry.cpp.i
 
 # target to preprocess a source file
 TestRegistry.cpp.i:
-	$(MAKE) -f CMakeFiles/HW2.dir/build.make CMakeFiles/HW2.dir/TestRegistry.cpp.i
+	$(MAKE) -f CMakeFiles/StlVect.dir/build.make CMakeFiles/StlVect.dir/TestRegistry.cpp.i
 .PHONY : TestRegistry.cpp.i
 
 TestRegistry.s: TestRegistry.cpp.s
@@ -228,7 +255,7 @@ TestRegistry.s: TestRegistry.cpp.s
 
 # target to generate assembly for a file
 TestRegistry.cpp.s:
-	$(MAKE) -f CMakeFiles/HW2.dir/build.make CMakeFiles/HW2.dir/TestRegistry.cpp.s
+	$(MAKE) -f CMakeFiles/StlVect.dir/build.make CMakeFiles/StlVect.dir/TestRegistry.cpp.s
 .PHONY : TestRegistry.cpp.s
 
 TestResult.o: TestResult.cpp.o
@@ -237,7 +264,7 @@ TestResult.o: TestResult.cpp.o
 
 # target to build an object file
 TestResult.cpp.o:
-	$(MAKE) -f CMakeFiles/HW2.dir/build.make CMakeFiles/HW2.dir/TestResult.cpp.o
+	$(MAKE) -f CMakeFiles/StlVect.dir/build.make CMakeFiles/StlVect.dir/TestResult.cpp.o
 .PHONY : TestResult.cpp.o
 
 TestResult.i: TestResult.cpp.i
@@ -246,7 +273,7 @@ TestResult.i: TestResult.cpp.i
 
 # target to preprocess a source file
 TestResult.cpp.i:
-	$(MAKE) -f CMakeFiles/HW2.dir/build.make CMakeFiles/HW2.dir/TestResult.cpp.i
+	$(MAKE) -f CMakeFiles/StlVect.dir/build.make CMakeFiles/StlVect.dir/TestResult.cpp.i
 .PHONY : TestResult.cpp.i
 
 TestResult.s: TestResult.cpp.s
@@ -255,7 +282,7 @@ TestResult.s: TestResult.cpp.s
 
 # target to generate assembly for a file
 TestResult.cpp.s:
-	$(MAKE) -f CMakeFiles/HW2.dir/build.make CMakeFiles/HW2.dir/TestResult.cpp.s
+	$(MAKE) -f CMakeFiles/StlVect.dir/build.make CMakeFiles/StlVect.dir/TestResult.cpp.s
 .PHONY : TestResult.cpp.s
 
 # Help Target
@@ -266,13 +293,16 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... HW2"
+	@echo "... StlVect"
 	@echo "... Failure.o"
 	@echo "... Failure.i"
 	@echo "... Failure.s"
 	@echo "... Main.o"
 	@echo "... Main.i"
 	@echo "... Main.s"
+	@echo "... Student.o"
+	@echo "... Student.i"
+	@echo "... Student.s"
 	@echo "... Test.o"
 	@echo "... Test.i"
 	@echo "... Test.s"

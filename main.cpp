@@ -16,6 +16,8 @@ void printStudentList(std::vector <std::vector <Student> *> group_student) {
     }
   }
 }
+
+//lambda function to sort vector
 void sortVector(std::vector<Student> *student){
   sort( (*student).begin( ), (*student).end( ), [ ]( const Student& lhs, const
   Student& rhs )
@@ -24,8 +26,9 @@ void sortVector(std::vector<Student> *student){
   });
 }
 
+// create groups of students. A group contains all students with same first
+// name letter
 std::vector <std::vector <Student> *> groupStudent(std::vector<Student> *student){
-
   std::vector <std::vector <Student> *> student_group;
   int outer_vector_cout = 0;
   student_group.push_back(new std::vector<Student>);
@@ -46,6 +49,7 @@ std::vector <std::vector <Student> *> groupStudent(std::vector<Student> *student
   return student_group;
 }
 
+// read file and create student objects
 // ASSUMPTION: Student ID is a positive integer.
 std::vector<Student> loadFile() {
 
@@ -66,8 +70,8 @@ std::vector<Student> loadFile() {
 
         while (getline(linestream, student, ';')) {
           if (!student.empty()) {
-            boost::trim_left(student);
-            boost::trim_right(student);
+            boost::trim_left(student);  // boost library
+            boost::trim_right(student); // boost library
             if(column_count==0){
               name=student.c_str();
             }
@@ -96,11 +100,11 @@ int main() {
   auto group_student = groupStudent(student);
   printStudentList(group_student);
 
+  // delete dynamic alloc memory
   delete student;
   for (auto ptr: group_student){
     delete ptr;
   }
-
 
   return 0;
 }

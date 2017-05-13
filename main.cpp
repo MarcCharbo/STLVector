@@ -1,10 +1,40 @@
 #include <iostream>
 #include <fstream>
 #include <boost/algorithm/string.hpp>
+#include <vector>
 #include "TestHarness.h"
 #include "Student.h"
 
-// ASSUPTION: Student ID is a positive integer.
+void sortVector(std::vector<Student> *student){
+  sort( (*student).begin( ), (*student).end( ), [ ]( const Student& lhs, const
+  Student& rhs )
+  {
+    return lhs.get_name() < rhs.get_name();
+  });
+}
+
+void groupStudent(std::vector<Student> *student){
+
+  std::vector <std::vector <Student> *> student_group;
+  int outer_vector_cout = 0;
+  student_group.push_back(new std::vector<Student>);
+  student_group.at(outer_vector_cout)->push_back((*student)[0]);
+
+    for (int i = 1; i < student->size();++i){
+      auto first = (*student)[i-1].get_name()[0];
+      auto second = (*student)[i].get_name()[0];
+      if(first == second){
+        student_group.at(outer_vector_cout)->push_back((*student)[i]);
+      }
+      else{
+        ++outer_vector_cout;
+        student_group.push_back(new std::vector<Student>);
+        student_group.at(outer_vector_cout)->push_back((*student)[i]);
+      }
+    }
+}
+
+// ASSUMPTION: Student ID is a positive integer.
 std::vector<Student> loadFile() {
 
   std::vector<Student> vect_student;
@@ -36,7 +66,7 @@ std::vector<Student> loadFile() {
           }
         }
       }
-      //check for empty id in txt file
+      //if empty id in txt file is empty set to default value
       if(id==id_default){
         id = 99;
       }
@@ -50,17 +80,9 @@ std::vector<Student> loadFile() {
 int main() {
 
   std::vector<Student>* student = new std::vector<Student>(loadFile());
+  sortVector(student);
+  groupStudent(student);
 
-  // random number generator used in some tests
-  srand(::time_t(NULL));
-
-  TestResult tr;
-  TestRegistry::runAllTests(tr);
-
-  // force console screen to hold
-  char ch;
-
-  std::cin >> ch;
 
   return 0;
 }

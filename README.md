@@ -1,2 +1,4 @@
-Simple example of using STL Vector, using vector of vector with pointers: std::vector <std::vector <Foo> *>
-Read file examples
+Read file, trim records using boost
+Sorting using lambda function
+Dynamic allocation of vectors on student having same last name
+Print results
